@@ -8,7 +8,7 @@ app.use(express.json());
 const port = process.env.PORT || 5000;
 dotenv.config({path : `./config/.env`})
 
-// databse connection
+// database connection
 connectDB()
     .then(() =>console.log("MongoDB Connected"))
     .catch((err) => console.log(err));
